@@ -1,4 +1,4 @@
-# DIGIT RECOGNIZER
+# Age and Gender Prediction
 
 Age and Gender prediction is a simple flask application which can be used to recognize the Gender of the human being present in an image as well as his/her age.
 
