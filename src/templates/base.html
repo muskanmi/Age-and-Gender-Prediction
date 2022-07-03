@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Age - Gender Prediction </title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <div id="loading">
+        <div class="img-section">
+        <div class="image-gif">
+        <img src="../static/images/ajax-loader.gif" alt="Loading Image Here" width="50" height="15">
+        </div>
+        <br><br>
+        <h1> Hold on! Your predictions are on its way... </h1>
+        <br><br><br><br><br><br><br>
+        </div>
+    </div>
+
+    <div id="content" class="container py-5">
+
+        {% block content %}
+        {% endblock content %}
+
+    </div>
+</body>
+
+<script>
+    function loading(){
+        document.getElementById("loading").style.display = "block";
+        document.getElementById("content").style.display = "none";
+    }
+</script>
+
+<script src="../static/js/index.js"></script>
+</html>

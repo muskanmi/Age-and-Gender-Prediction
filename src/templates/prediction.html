@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="container py-5">
+        
+
+        <header class="text-white text-center">
+            <h1 class="display-4"> Age: {{ AGE }}</h1>
+            <h1 class="display-4"> Gender: {{GENDER}} </h1>
+        </header>
+        <div>
+            <!-- {% set file_name = "uploaded/{{ FILENAME }}" %} -->
+            <image src="{{url_for('static',filename=FILEPATH)}}" align="middle">
+        </div>
+
+        <div class="back-image">
+        <a href="/"><button class="btn btn-primary back-btn"> &laquo; Back </button></a>
+        </div>
+    </div>
+
+{% endblock content %}
